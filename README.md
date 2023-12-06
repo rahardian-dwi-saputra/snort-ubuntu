@@ -3,6 +3,8 @@ Snort menggunakan serangkaian aturan yang membantu menentukan aktivitas jaringan
 
 ## Arsitektur Lab
 
+![alt text](https://github.com/rahardian-dwi-saputra/snort-ubuntu/blob/main/assets/arsitektur%20lab.png)
+
 ## Requirement
 - [Virtualbox](https://www.virtualbox.org/)
 - [Ubuntu Desktop versi 22.04](https://ubuntu.com/download/desktop)
@@ -14,29 +16,40 @@ Snort menggunakan serangkaian aturan yang membantu menentukan aktivitas jaringan
 ifconfig
 ```
 
+![alt text](https://github.com/rahardian-dwi-saputra/snort-ubuntu/blob/main/assets/snort%201.JPG)
+
 - Lakukan update terlebih dahulu
 ```sh
 sudo apt update
 ```
+
+![alt text](https://github.com/rahardian-dwi-saputra/snort-ubuntu/blob/main/assets/snort%202.JPG)
 
 - Install Snort
 ```sh
 sudo apt install snort
 ```
 
+![alt text](https://github.com/rahardian-dwi-saputra/snort-ubuntu/blob/main/assets/snort%203.JPG)
+
 - Cek hasil instalasi snort
 ```sh
 snort -V
 ```
+
+![alt text](https://github.com/rahardian-dwi-saputra/snort-ubuntu/blob/main/assets/snort%204.JPG)
 
 - Buat file backup untuk konfigurasi snort
 ```sh
 sudo cp /etc/snort/snort.conf /etc/snort/snort.conf.backup
 ```
 
+![alt text](https://github.com/rahardian-dwi-saputra/snort-ubuntu/blob/main/assets/snort%205.JPG)
 
 ## Konfigurasi Snort
 - Masuk sebagai user root
+
+![alt text](https://github.com/rahardian-dwi-saputra/snort-ubuntu/blob/main/assets/snort%206.JPG)
 
 - Buka file konfigurasi snort
 ```sh
@@ -44,38 +57,29 @@ nano /etc/snort/snort.conf
 ```
 - Tambahkan IP network dibaris berikut
 
+![alt text](https://github.com/rahardian-dwi-saputra/snort-ubuntu/blob/main/assets/snort%207.JPG)
 
 - Cek validasi konfigurasi snort
 ```sh
 snort -T -c /etc/snort/snort.conf
 ```
 
+![alt text](https://github.com/rahardian-dwi-saputra/snort-ubuntu/blob/main/assets/snort%208.JPG)
+
 - Jalankan snort
 ```sh
 snort -A console -q -c /etc/snort/snort.conf -i enp0s3
 ```
+
+![alt text](https://github.com/rahardian-dwi-saputra/snort-ubuntu/blob/main/assets/snort%209.JPG)
 
 - Lakukan port scanning dengan tool `nmap` di sisi Attacker
 ```sh
 nmap <IP_target>
 ```
 
+![alt text](https://github.com/rahardian-dwi-saputra/snort-ubuntu/blob/main/assets/snort%2010.JPG)
+
 - Log terdeteksi di snort. Tekan `Ctrl+C` untuk menghentikan snort
 
-
-
-
-
-- Name:
-```sh
-Smith'; select * from user_system_data; --
-```
-
-![alt text](https://github.com/rahardian-dwi-saputra/webgoat/blob/main/assets/wg%2010.JPG)
-
-Password user Dave:
-```sh
-passW0rD
-```
-
-## Can you login as Tom?
+![alt text](https://github.com/rahardian-dwi-saputra/snort-ubuntu/blob/main/assets/snort%2011.JPG)
