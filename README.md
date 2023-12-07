@@ -89,3 +89,4 @@ nmap <IP_target>
 ## Simulasi Serangan
 - [Deteksi serangan DDOS](Deteksi%20DDOS.md)
 - [Deteksi SQL Injection](Deteksi%20SQL%20Injection.md)
+- [Deteksi serangan Brute Force pada SSH](Deteksi%20Brute%20Force%20SSH.md)
