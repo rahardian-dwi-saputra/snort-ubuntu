@@ -85,3 +85,7 @@ nmap <IP_target>
 - Log terdeteksi di snort. Tekan `Ctrl+C` untuk menghentikan snort
 
 ![alt text](https://github.com/rahardian-dwi-saputra/snort-ubuntu/blob/main/assets/snort%2011.JPG)
+
+## Simulasi Serangan
+- [Deteksi serangan DDOS](Deteksi%20DDOS.md)
+- [Deteksi SQL Injection](Detection%20SQL%20Injection.md)
