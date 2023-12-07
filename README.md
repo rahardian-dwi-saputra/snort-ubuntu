@@ -1,6 +1,8 @@
 # Snort IDS
 Snort menggunakan serangkaian aturan yang membantu menentukan aktivitas jaringan berbahaya dan menggunakan aturan tersebut untuk menemukan paket yang cocok dan menghasilkan peringatan bagi pengguna.
 
+User manual Snort: http://manual-snort-org.s3-website-us-east-1.amazonaws.com/
+
 ## Arsitektur Lab
 
 ![alt text](https://github.com/rahardian-dwi-saputra/snort-ubuntu/blob/main/assets/arsitektur%20lab.png)
