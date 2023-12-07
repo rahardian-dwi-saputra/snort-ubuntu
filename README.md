@@ -88,4 +88,4 @@ nmap <IP_target>
 
 ## Simulasi Serangan
 - [Deteksi serangan DDOS](Deteksi%20DDOS.md)
-- [Deteksi SQL Injection](Detection%20SQL%20Injection.md)
+- [Deteksi SQL Injection](Deteksi%20SQL%20Injection.md)
